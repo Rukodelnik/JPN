@@ -1,0 +1,122 @@
+.tokyo{
+    position: absolute;
+    top: 2245px;
+    left: 4070px;
+}
+.kyoto{
+    position: absolute;
+    top: 2120px;
+    left: 2755px;
+}
+.kobe{
+    position: absolute;
+    top: 2173px;
+    left: 2553px;
+}
+.osaka{
+    position: absolute;
+    top: 2200px;
+    left: 2643px;
+}
+.sapporo{
+    position: absolute;
+    top: 940px;
+    left: 750px;
+}
+.fukuoka{
+    position: absolute;
+    top: 2070px;
+    left: 923px;
+}
+.hiroshima{
+    position: absolute;
+    top: 1990px;
+    left: 1645px;
+}
+.yokohama{
+    position: absolute;
+    top: 2300px;
+    left: 4001px;
+}
+.nagoya{
+    position: absolute;
+    top: 2168px;
+    left: 3122px;
+}
+.easterEgg{
+    position: absolute;
+    top: 2900px;
+    left: 3830px;
+}
+.box{
+    display: grid;
+    border: 2px solid rgb(189, 189, 189);
+    padding: 22px 18px;
+    /* position: absolute; */
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.name-container{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content-image{
+    width: 100%;
+    border-radius: 8px;
+}
+.content-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(720px, 1fr));
+    margin-top: 1rem;
+    gap: .25rem;
+}
+.paragraph{
+    margin-top: 170px;
+}
+
+.hide{
+    display: none;
+}
+input::placeholder{
+    font-size: 22px;
+}
+input{
+    height: 50px;
+    position: fixed;
+    width: 800px;
+    border: 2px solid rgb(185, 185, 185);
+    border-top: none;
+    display: flex;
+    left: 0;
+    align-items: center;    
+    font-size: 22px;
+    /* padding: 30px 40px; */
+}
+@media only screen and (max-width: 1000px){
+    .content-row{
+        row-gap: 50px;
+    }
+    .content-container{
+        width: 700px;
+    }
+    .name-container .latin-text,
+    .name-container .japanese-text{
+        font-size: 60px;
+    }
+    input::placeholder{
+        font-size: 30px;
+    }
+    input{
+        height: 90px;
+        width: 980px;
+        font-size: 30px;
+    }
+}
